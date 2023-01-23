@@ -1,4 +1,4 @@
-{% set version = '1.3.0' %}
+{% set version = "1.4.0" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -11,10 +11,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/statcheck_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/statcheck/statcheck_{{ version }}.tar.gz
-  sha256: 97d5b0d5664eb80b327113dcb785eb6f370cce5ee59a77cd769a569f595b7e47
+  sha256: 9d69b40ccd5e7d22f120f5f4455a5aeaa1c527f24b47a42a24d5ebb7accf2bc2
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   rpaths:
     - lib/R/lib/
@@ -48,7 +48,7 @@ about:
   summary: Extract statistics from articles and recompute p values.
   license_family: GPL2
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
