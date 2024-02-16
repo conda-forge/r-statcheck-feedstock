@@ -1,4 +1,4 @@
-{% set version = "1.4.0" %}
+{% set version = "1.5.0" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -11,11 +11,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/statcheck_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/statcheck/statcheck_{{ version }}.tar.gz
-  sha256: 9d69b40ccd5e7d22f120f5f4455a5aeaa1c527f24b47a42a24d5ebb7accf2bc2
+  sha256: a7d9f97adfd2409e0facd9bc569ddd3851200e2275b1d089086816179101593f
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
