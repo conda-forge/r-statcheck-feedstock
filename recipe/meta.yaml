@@ -15,7 +15,7 @@ source:
 
 build:
   merge_build_host: true  # [win]
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -29,13 +29,17 @@ requirements:
     - r-base
     - r-ggplot2
     - r-plyr
+    - r-rlang
     - r-rmarkdown
+    - r-stringi
 
   run:
     - r-base
     - r-ggplot2
     - r-plyr
+    - r-rlang
     - r-rmarkdown
+    - r-stringi
 
 test:
   commands:
