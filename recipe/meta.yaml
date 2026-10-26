@@ -1,4 +1,4 @@
-{% set version = "1.5.0" %}
+{% set version = "1.6.1" %}
 
 {% set posix = 'm2-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/statcheck_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/statcheck/statcheck_{{ version }}.tar.gz
-  sha256: a7d9f97adfd2409e0facd9bc569ddd3851200e2275b1d089086816179101593f
+  sha256: 486ebf010778f14fc462809fd85d5acb66161f0d0179eca7d36224ce7bbf0c03
 
 build:
-  number: 3
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
