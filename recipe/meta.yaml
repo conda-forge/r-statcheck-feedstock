@@ -25,19 +25,25 @@ requirements:
 
   host:
     - r-base
+    - r-dt
     - r-ggplot2
+    - r-pdftools
     - r-plyr
     - r-rlang
     - r-rmarkdown
     - r-stringi
+    - r-stringr
 
   run:
     - r-base
+    - r-dt
     - r-ggplot2
+    - r-pdftools
     - r-plyr
     - r-rlang
     - r-rmarkdown
     - r-stringi
+    - r-stringr
 
 test:
   commands:
